@@ -44,7 +44,7 @@ var expectChildren = function(container, children) {
     } else {
       expect(textNode != null).toBe(true);
       expect(textNode.nodeType).toBe(3);
-      expect(textNode.data).toBe('' + children);
+      expect(textNode.data).toBe(String(children));
     }
   } else {
     var mountIndex = 0;
