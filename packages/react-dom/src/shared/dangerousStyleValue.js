@@ -45,7 +45,7 @@ function dangerousStyleValue(name, value, isCustomProperty) {
     return value + 'px'; // Presumes implicit 'px' suffix for unitless numbers
   }
 
-  return ('' + value).trim();
+  return (String(value)).trim();
 }
 
 module.exports = dangerousStyleValue;
