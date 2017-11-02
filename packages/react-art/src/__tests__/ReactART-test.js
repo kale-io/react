@@ -295,7 +295,7 @@ describe('ReactART', () => {
     var container = document.createElement('div');
     ReactDOM.render(<Outer />, container);
     expect(ref).not.toBeDefined();
-    ReactDOM.render(<Outer mountCustomShape={true} />, container);
+    ReactDOM.render(<Outer mountCustomShape />, container);
     expect(ref.constructor).toBe(CustomShape);
   });
 
