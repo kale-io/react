@@ -162,7 +162,7 @@ describe('ReactART', () => {
     var realNode = ReactDOM.findDOMNode(instance);
     testDOMNodeStructure(realNode, expectedStructure);
 
-    ReactDOM.render(<TestComponent flipped={true} />, container);
+    ReactDOM.render(<TestComponent flipped />, container);
 
     var expectedNewStructure = {
       nodeName: 'svg',
