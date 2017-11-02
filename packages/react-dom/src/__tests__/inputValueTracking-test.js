@@ -78,7 +78,7 @@ describe('inputValueTracking', () => {
 
   it('should tracked`checked` changes', () => {
     var node = ReactTestUtils.renderIntoDocument(
-      <input type="checkbox" defaultChecked={true} />,
+      <input type="checkbox" defaultChecked />,
     );
 
     var tracker = getTracker(node);
