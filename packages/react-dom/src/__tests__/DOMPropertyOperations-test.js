@@ -48,7 +48,7 @@ describe('DOMPropertyOperations', () => {
       var container = document.createElement('div');
       ReactDOM.render(<div disabled="disabled" />, container);
       expect(container.firstChild.getAttribute('disabled')).toBe('');
-      ReactDOM.render(<div disabled={true} />, container);
+      ReactDOM.render(<div disabled />, container);
       expect(container.firstChild.getAttribute('disabled')).toBe('');
       ReactDOM.render(<div disabled={false} />, container);
       expect(container.firstChild.getAttribute('disabled')).toBe(null);
