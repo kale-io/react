@@ -149,7 +149,7 @@ describe('ReactDOMTextarea', () => {
     expect(node.value).toBe('giraffe');
 
     stub = ReactDOM.render(
-      <textarea value={true} onChange={emptyFunction} />,
+      <textarea value onChange={emptyFunction} />,
       container,
     );
     expect(node.value).toEqual('true');
