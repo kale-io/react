@@ -40,7 +40,7 @@ var expectChildren = function(container, children) {
     textNode = outerNode.firstChild;
 
     if (children === '') {
-      expect(textNode != null).toBe(false);
+      expect(textNode !== null).toBe(false);
     } else {
       expect(textNode != null).toBe(true);
       expect(textNode.nodeType).toBe(3);
