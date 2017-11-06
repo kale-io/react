@@ -117,7 +117,7 @@ var DOMMarkupOperations = {
    * @return {string} Markup string, or empty string if the property was invalid.
    */
   createMarkupForCustomAttribute: function(name, value) {
-    if (!isAttributeNameSafe(name) || value == null) {
+    if (!isAttributeNameSafe(name) || value === null) {
       return '';
     }
     return name + '=' + quoteAttributeValueForBrowser(value);
